@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>코드스쿼드 자판기</title>
+  </head>
+  <body>
+    <section class="vending_wrap">
+      <div class="vending_machine">
+        <div class="product_screen">
+          <ul class="product_list"></ul>
+        </div>
+        <div class="choice_screen">
+          <div class="choice_product_price">0</div>
+          <div class="choice_dial">
+            <button data-type="number">1</button>
+            <button data-type="number">2</button>
+            <button data-type="number">3</button>
+            <button data-type="number">4</button>
+            <button data-type="number">5</button>
+            <button data-type="number">6</button>
+            <button data-type="number">7</button>
+            <button data-type="number">8</button>
+            <button data-type="number">9</button>
+            <button data-type="cancel">취소</button>
+            <button data-type="number">0</button>
+            <button data-type="select">선택</button>
+          </div>
+          <div class="choice_message">
+            돈을 넣어주세요.
+          </div>
+        </div>
+      </div>
+      <div class="customer_wallet">
+        <ul class="wallet_list"></ul>
+      </div>
+    </section>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+body {
+  background: #ddd;
+  position: relative;
+}
+.vending_wrap {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  margin: 50px auto;
+}
+.vending_machine {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  border: 10px solid #000;
+  border-radius: 15px;
+}
+.product_screen {
+  width: 65%;
+  height: 500px;
+  border-right: 5px solid #000;
+}
+.choice_screen {
+  width: 35%;
+  height: 500px;
+  background-color: #333;
+  padding: 10px;
+}
+.customer_wallet {
+  width: 200px;
+  height: 520px;
+  margin-left: 5%;
+  border: 5px solid #000;
+  border-radius: 15px;
+  background-color: #444;
+}
+.product_list {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(5, 88px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.product_list:after {
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  width: 15px;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  content: "";
+}
+.product_list li {
+  position: relative;
+  font-size: 13px;
+  border: 3px solid #222;
+  border-radius: 4px;
+}
+.product_list li .product_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 25px);
+}
+.product_list li .product_name + p {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 5px;
+  background: #555;
+  color: #ddd;
+}
+.choice_product_price {
+  height: 45px;
+  line-height: 45px;
+  padding-right: 15px;
+  font-size: 25px;
+  color: #fff;
+  text-align: right;
+}
+.choice_dial {
+  display: grid;
+  grid-template-rows: repeat(4, 50px);
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+  grid-gap: 10px;
+  padding: 0 15px;
+}
+.choice_dial button {
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.09),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 0 1px rgba(0, 0, 0, 0.3),
+    0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.075),
+    rgba(255, 255, 255, 0.045)
+  );
+  color: #ddd;
+  font-size: 14px;
+}
+.choice_dial button:active {
+  box-shadow: none;
+}
+.choice_message {
+  height: 175px;
+  background: #222;
+  margin-top: 20px;
+  padding: 10px;
+  color: #999;
+  font-size: 13px;
+  line-height: 30px;
+  overflow-y: auto;
+}
+.wallet_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 70px;
+}
+.wallet_list button {
+  background-color: #555;
+  color: white;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  width: 80px;
+  height: 30px;
+  margin-right: 10px;
+  font-size: 13px;
+}
+.count_index {
+  color: #fff;
+}
+.wallet_sum {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.product_index {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.product_list .active {
+  border-color: red;
+}
+
+.product_list .active .product_price {
+  background: brown;
+}
