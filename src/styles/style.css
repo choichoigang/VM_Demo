@@ -152,7 +152,7 @@ body {
 }
 
 .product_list .active {
-  border-color: red;
+  box-shadow: 2px 2px 2px 2px #d24c75;
 }
 
 .product_list .active .product_price {
